@@ -1,0 +1,39 @@
+{
+    "name": "dkarlovi/dockerfile-builder",
+    "type": "library",
+    "description": "Dockerfile generation CLI utility",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dalibor Karlović",
+            "email": "dkarlovi@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Dkarlovi\\Dockerfile\\Builder\\": "Dockerfile/Builder/"
+        }
+    },
+    "bin": [
+        "bin/dockerfile-builder"
+    ],
+    "require": {
+        "php": "^7.1",
+        "dkarlovi/dockerfile": "^1.0@dev",
+        "symfony/console": "^3.3",
+        "symfony/yaml": "^3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.2"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable" : true,
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
